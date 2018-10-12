@@ -157,6 +157,7 @@ console.log(completePerson);
             =====
             ...
  */
+
 var arrayOfObjects = [
     {
       id: 0,
@@ -209,8 +210,16 @@ var arrayOfObjects = [
       total: "194.33"
     }
   ];
-  
-
+  function printOrders(orders){
+    for(var i=0; i<orders.length; i++){
+      console.log("=====")
+      console.log("id: " , orders[i].id);
+      console.log("date: ", orders[i].date);
+      console.log("total: ", orders[i].total)
+    }
+  }
+console.log(arrayOfObjects);
+console.log(printOrders);
 /*
 8. Addition with an object
    Declare a new variable named sumObj and set it to be a new object with the properties `a`, `b`, and `result`. 
