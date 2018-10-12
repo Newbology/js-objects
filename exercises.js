@@ -98,7 +98,7 @@ console.log(plainBox);
 */
 var stockCar = {
     model: "Ford",
-    year: "1972",
+    year: "1952",
     automaticTransmission: true,
     driver: null,
     passengers: [],
@@ -116,10 +116,21 @@ console.log(stockCar);
             - adding a property called `age` and set its value to be the third parameter.
 
    The function will return the first parameter.
-   Finally, invoke your new function while passing in the `plainPerson` object and additional agrument values, then store 
+   Finally, invoke your new function while passing in the `plainPerson` object and additional agrument values, then store
    the return value in a variable named `completePerson`. Use `console.log` three times to print the entire object, just 
-   the value at `name`, and just the value at `age`.
- */
+   the value at `name`, and just the value at `age`.*
+  */
+
+var plainPerson = {};
+function buildPerson(person, nameString, age){
+  plainPerson.name = nameString;
+  plainPerson.age = age;
+return person;
+}
+
+var completePerson = buildPerson(plainPerson, "Tom Wilson", 24);
+console.log(completePerson);
+
 
 
 /*
