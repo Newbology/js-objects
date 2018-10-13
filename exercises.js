@@ -332,8 +332,12 @@ console.log(isAutomaticTransmission);
      Invoke your function and pass in your objects, store the result to a variable named stockCarWithDriver, and inspect 
       your results. Consider using `plainPerson` as your driver.
  */
-
-
+function addDriver(car, person){
+  car.driver = person;
+  return car;
+}
+var stockCarWithDriver = addDriver(stockCar, plainPerson);
+console.log(stockCarWithDriver);
 
 
 /*
